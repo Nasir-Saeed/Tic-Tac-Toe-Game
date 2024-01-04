@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+  }
+
+  .cell {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+  }
+
+  #nameModal, #endGameModal, #winModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  #nameModal input, #endGameModal input, #winModal input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  #nameModal button, #endGameModal button, #winModal button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #timer {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+    z-index: 1;
+  }
+
+  #winnerDetailsTableContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }

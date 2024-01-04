@@ -1,0 +1,1 @@
+Play Tic Tac Toe online - the classic game of naughts and crosses. You can play Tic Tac Toe for free online against other players, the computer, or a friend in local multiplayer.
